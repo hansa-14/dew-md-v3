@@ -85,7 +85,7 @@ app.get("/code", async (req, res) => {
           const newBot = {
             number,
             owner: "AutoPair",
-            session: Scan_Id,
+            SessionID: Scan_Id,
             prefix: ".",
             mode: "public",
             presence: "auto",
