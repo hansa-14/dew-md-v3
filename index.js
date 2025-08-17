@@ -48,7 +48,8 @@ app.get("/code", async (req, res) => {
 
     if (!conn.authState.creds.registered) {
       await delay(1500);
-      const code = await conn.requestPairingCode(number);
+      const pair = "DEWMDOFC"
+      const code = await conn.requestPairingCode(number,pair);
       if (!res.headersSent) res.send({ code });
     }
 
